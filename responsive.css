@@ -1,0 +1,23 @@
+@media only screen and (min-width: 200px) and (max-width: 576px){
+    body{
+        padding-left: 100px;
+    }
+    
+    .container{
+        width: 90%;
+    }
+    .nav-items li{
+        margin-left:  0px;
+        margin-right: 0px;
+    }
+    .flex-div{
+        /* justify-content: center; */
+        flex-direction: column;
+    }
+    .nav-items button{
+        margin: 20px;
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+}
