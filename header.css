@@ -1,86 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* nav-area start*/
 
-
-
-
-/* header css start */
-
-
-.logo-name h3{
-    font-size: 32px;
-    font-family: "Poppins", sans-serif;
+.nav-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo h1{
     color: var(--primary-color);
+    font-size: 32px;
+    text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: 700;
-
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+}
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
 }
 .nav-items li{
     font-family: "Rubik", sans-serif;
     list-style: none;
-    margin-left: 30px;
-    margin-right:30px;
-    /* letter-spacing: 3%; */
+    margin: 0px 15px;
 }
-.nav-items li a{
+.nav-items a{
     text-decoration: none;
     font-size: 21px;
-    font-weight: 400;
     letter-spacing: 1px;
-   
-   
 }
-.nav-items button{
-    /* margin: 0 24px; */
-    margin-left: 24px;
-    padding: 15px 20px;
-    font-size: 21px;
-    /* font-weight: 400; */
-    letter-spacing: 2px;
+#button{
     background-color: var(--primary-color);
+    text-decoration: none;
+    padding: 15px;
+    border: none;
 }
-
-/* header css end */
-
+/* nav-area end*/
 
 
 
-/* banner css start*/
 
-.banner-description h1 {
-    text-transform: uppercase;
+
+/* banner-area start */
+.banner-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-desc h1{
     font-size: 40px;
+    text-transform: uppercase;
+    line-height: 55px;
     font-weight: 619px;
-    line-height: 60px;
 }
-.banner-description img{
-    margin: 0px 15px;
-
+.banner-desc img{
+    margin: 0px 13px;
 }
 #location{
     color: var(--primary-color);
 }
-.banner-description p{
+.banner-desc p{
     margin-top: 15px;
     color: grey;
-    word-spacing: 2px;
-    font-size: 19px;
+    font-size: 20px;
     letter-spacing: 1px;
-
 }
-.knowledge h1{
+.achievement{
     display: flex;
-    gap: 20px;
-    font-size: 24px;
-    font-weight: lighter;
-    margin: 25px;
-    margin-left: 0px;
-    text-transform: uppercase;
+    gap: 10px;
+    margin: 25px 0px;
 }
-
-.banner-image img{
-    margin-left: 70px;
+.achievement h1{
+    font-size: 26px;
+    font-weight: lighter;
+    text-transform: uppercase;
 }
 #hero-buttons {
     border-radius: 45px;
@@ -114,50 +108,31 @@
     text-decoration: none;
 }
 .social-icon {
+    display: flex;
     font-size: 2rem;
     gap: 25px;
     margin-top: 30px;
     margin-left: 15px;
-    display: flex;
+   
 }
 .social-icon i{
     color: grey;
 }
-.services h1{
+.abput-me-area{
     display: flex;
-    gap: 30px;
-    background-color: black;
-    padding: 50px 50px;
-    margin-top: -90px;
-    width: auto;
-    rotate: z -5deg; 
-    font-size: 35px; 
-    font-weight: lighter;
-
-}
-
-.about-me-area {
+    justify-content: space-between;
+    align-items: center;
     margin-top: 50px;
-
 }
-.about-title h1{
+.about-desc h1{
     font-size: 45px;
-
+    text-transform: uppercase;
 }
-.about-title p{
+.about-desc p{
     color: grey;
-    /* letter-spacing: 0px; */
-    word-spacing: 2px;
     font-size: 21px;
     margin-top: 20px;
-
-}
-.my-experience {
-    margin-left: 50px;
-    margin-right: 0px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-
+    letter-spacing: 1px;
 }
 .my-experience img{
     margin-top: 50px;
@@ -165,47 +140,43 @@
 .my-experience h1{
     font-size: 45px;
     margin-top: 20px;
-
 }
 .my-experience p{
     font-size: 20px;
     text-align: right;
-    margin-right: 0px;
-
 }
+/* banner-area end */
 
-/* banner css end*/
 
-.Experience-area{
-    background: rgb(50 38 41);
-    padding: 40px 380px;
-    
-    
+
+
+/* my-work-area start*/
+.overall-work-area{
+    background-color: rgb(50 38 41);;
 }
-
+.My-work-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
 .Experience h3{
     font-style: italic;
-
 }
 .Experience h1{
-    font-size: 42px;
+    font-size: 40px;
     text-transform: uppercase;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    margin: 30px 0px;
 }
 .Experience{
     line-height: 26px;
-    font-family: 25px;
+    font-size: 17px;
 }
-
-
 .my-work{
     display: flex;
+    justify-content: space-between;
     gap: 150px;
     margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 0px;
-    padding-top: 30px;
 }
 .my-work > h3{
     font-style: italic;
@@ -215,60 +186,40 @@
     font-weight: lighter;
     margin-left: 150px;
 }
-
-
 .work-title > h1{
     font-size: 35px;
     border-bottom: 1px solid var(--font-primary-color);
+    margin: 30px 0px;
     padding-bottom: 30px;
-    
 }
+/* my-work-area end*/
 
 
 
+/* award-area start*/
 
-
-
-
-
-
-/* award me section */
-#award{
-    margin-top: 100px;
-}
-
-#award-2{
-    margin-bottom: 80px;
-}
-.award-area{
-    padding-bottom: 50px;
-
-}
-
-.Award-title {
-    /* display: flex; */
+ #award{
+    margin-top: 60px;
+ }
+.award-title{
     text-align: center;
 }
-.Award-title h1{
-text-transform: uppercase;
+.award-title h1{
     font-size: 35px;
 }
-.Award-title p{
+.award-title p{
     font-size: 21px;
     color: grey;
     margin-top: 20px;
-    margin-bottom: 60px;
-
+    margin-bottom: 40px;
 }
-
-.projects{
+.Projects{
     background-color: black;
-    padding-top: 60px;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-bottom: 40px;
+    /* width: 80%;
+    margin: 0px auto; */
     display: flex;
     justify-content: space-between;
+    padding: 80px 80px 80px 80px;
 }
 .project-title h1{
     font-weight: lighter;
@@ -277,136 +228,130 @@ text-transform: uppercase;
     font-size: 19px;
     color: grey;
     margin-top: 20px;
-    margin-bottom: 60px;
-
+    /* margin-bottom: 60px; */
 }
-
-/* award me section */
-
+/* award-area end*/
 
 
 
 
-
-.potfolio-items{
+/* portfolio-area start */
+.portfolio-title{
+    align-items: center;
+    text-align: center;
+}
+.portfolio-title h1{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.portfolio-title p{
+    font-size: 21px;
+    color: grey;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+.potfolio-buttons{
     display: flex;
     justify-content: center;
     gap: 50px;
 }
-
-.potfolio-items button{
+.potfolio-buttons button{
     background-color: black;
     width: fit-content;
     padding: 15px 20px;
     font-size: 25px;
     border: none;
-    
 }
-
-.potfolio-items > button:hover{
+.potfolio-buttons > button:hover{
     background-color: var(--primary-color);
     color: white;
 }
-
-.potfolio-items > button> a{
+.potfolio-buttons > button> a{
     text-decoration: none;
 }
-#all-projects-id{
-    margin-bottom: 100px;
-}
-
-
-.all-projects{
-    padding: 20px 30px;
+.project-1{
+    display: flex;
+    justify-content: space-between;
     gap: 60px;
-    margin-bottom: 60px;
 }
-
-.projects-desc h1{
+.project-2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    gap: 60px;
+}
+.project-details h1{
     font-size: 40px;
     margin: 20px;
-
 }
-.projects-desc p{
+.project-details p{
     font-size: 21px;
     margin: 18px;
     color: grey;
-
 }
-.projects-desc h2{
-   
+.project-details h2{
     margin: 20px;
     font-style: italic;
-    
-
 }
+/* portfolio-area end */
 
-     /* background-color: rgb(52 38 27); */
 
+
+/* bio-data-area start */
 .contact-title{
     text-align: center;
 }
 .contact-title h4{
     font-style: italic;
-    margin-top: 30px;
-
+    margin-top: 70px;
 }
 .contact-title h1{
     margin: 30px;
     font-size: 40px;
-    
 }
-.background{
+.bio-data-area{
     background-color: rgb(52 38 27);
-    /* height: 400px; */
+    align-items: center;
     margin-bottom: 40px;
-
 }
 .any-project-area{
     margin: 0px 90px;
 }
-.any-project-area h1{
+.bio-data-area h1{
     font-size: 40px;
 }
-
-.bio{
+.bio-data {
     display: flex;
     justify-content: space-between;
-    
 }
-.bio h3{
+.bio-data h3{
     text-align: left;
     font-weight: lighter;
     text-transform: uppercase;
     margin-top: 40px;
-    
 }
 .text-1{
     border-bottom: 1px solid var(--font-primary-color);
     width: 35%;
     padding-bottom: 30px;
-
 }
 .text-2{
     border-bottom: 1px solid var(--font-primary-color);
     width: 35%;
     padding-bottom: 30px;
-    text-align: left;
-
 }
 .text-3{
     text-transform: uppercase;
-    font-weight: lighter;
+    /* font-weight: lighter; */
     margin-top: 50px;
-    /* margin: 20px; */
     border-bottom: 1px solid var(--font-primary-color);
     padding-bottom: 30px;
 }
 .text-4{
     display: flex;
     gap: 10px;
-    padding-top: 30px;
-    
+    /* padding-top: 30px; */
+    margin-top: 40px;
 }
 .text-4 h3{
     text-transform: uppercase;
@@ -420,62 +365,58 @@ text-transform: uppercase;
     letter-spacing: 2px;
     border: none;
 }
-
-.logo h1{
-    color: var(--primary-color);
-    font-weight: bold;
-    font-size: 40px;
-    display: flex;
-    text-align: center;
-
+.any-project-area button > a{
+    text-decoration: none;
 }
-.footer-section{
+/* bio-data-area end */
+
+
+
+/* footer-area start */
+.footer-sec{
     background-color: black;
+    padding-top: 70px;
+    padding-bottom: 80px;
 }
-
-.footer-title{
+.footer-area {
+    align-items: center;
     text-align: center;
 }
-.footer-title h1{
-    margin: 30px;
-    font-size: 43px;
+.footer-area h1{
     color: var(--primary-color);
-    letter-spacing: 5px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.footer-items{
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    margin-bottom: 40px;
 }
 .footer-items li{
-    font-family: "Rubik", sans-serif;
     list-style: none;
-    margin-left: 30px;
-    margin-right:30px;
-
 }
-.footer-items li a{
+.footer-items li > a{
     text-decoration: none;
-    font-size: 26px;
-    font-weight: 400;
+    font-size: 25px;
     letter-spacing: 1px;
-   
-   
 }
-.footer-icon-2{
-    font-size: 2rem;
-    gap: 25px;
-    padding-top: 90px;
-    margin-left: 15px;
+.footer-icon{
     display: flex;
-    padding-left: 450px;
-    padding-bottom: 20px;
+    justify-content: center;
+    gap: 30px;
+    font-size: 2rem;
 }
-.cpoyright-area h2{
+.copyright-area h2{
+    text-align: center;
     font-weight: lighter;
-    margin-left: 350px;
-   
-
 }
-.name-color{
+.name{
     color: var(--primary-color);
     font-weight: bold;
 }
-
-
+/* footer-area end */
 
